@@ -1,0 +1,66 @@
+header{
+    height: 70px;
+    width: 100%;
+    background-color: #8ecae6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#logo{
+    height: 60px;
+    width: 70px;
+    filter: invert(1);
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+.mySlides{
+    width: 100%;
+}
+.description{
+    max-width: 700px;
+    margin-left: 25%;
+}
+.center {
+    position: absolute;
+    font-size:xx-large;
+    color:aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.card{
+    background-color:#18aada;
+    border:none;
+    height:300px;
+    width: 300px;
+    margin-bottom: 20px;
+    
+ }
+ .card img{
+    height: 300px;
+    width: 300px;
+    filter: blur(1px);
+ }
+ .card :hover{
+    filter: none;
+    font-size: 0px;
+ }
+ .card {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+  }
+ .cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

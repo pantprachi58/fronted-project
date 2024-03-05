@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+
+<body>
+
+<!-- Navigation -->
+<header>
+  <a href="#home"><img src="photos//logo1.jpeg" id="logo"></a>
+  <a href="#home" class="header">Home</a>
+  <a href="#band" class="header">Band</a>
+  <a href="#tour" class="header">Tour</a>
+  <a href="#contact" class="header">Contact</a>
+</header>
+
+<section >
+    <img class="mySlides" src="photos//bg2.jpeg" >
+     <div class="center"><u>UTTARAKHAND TOURISM</u></div>
+    <img class="mySlides" src="photos//bg3.png">
+  <div class="center"><u>UTTARAKHAND TOURISM</u></div>
+  <img class="mySlides" src="photos//bg4.jpg" >
+  <div class="center"><u>UTTARAKHAND TOURISM</u></div>
+</section>
+
+<section class="description">
+  <h2 class="des-heading">WHAT DO YOU WANT TO DO TODAY?</h2>
+  <p class="des-opacity"><i>Uttarakhand offers limitless opportunities for tourism and adventure. There is something for everyone - Pilgrimage, Temples, Wildlife tours, Bird Watching, Rafting, Mountaineering, Skiiing, Trekking, Camping, Yoga and Meditation and much more. Check out Uttarakhand Travel Blog for interesting articles about Uttarakhand.</i></p>
+</section>
+<div class="cards">
+<div class="card">
+  <img src="photos/card-trekking.jpeg" alt="trekking">
+  <div class="centered"><a href="treking.html">TREKKING</a></div>
+
+</div>
+<div class="card">
+  <img src="photos/bg5.jpeg" alt="hillstation">
+  <div class="centered"><a href="hill.html">Hill Station</a></div>
+  
+</div>
+<div class="card">
+  <img src="photos/card-chardham.jpeg" alt="chardham">
+  <div class="centered"><a href="chardham.html">Char Dham</a></div>
+</div>
+</div>
+
+
+
+<script>
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+</script>
+</body>
+</html>
